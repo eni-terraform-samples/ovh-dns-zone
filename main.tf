@@ -1,5 +1,5 @@
 data "ovh_domain_zone" "zone" {
-  name = "star-wars.ovh"
+  name = var.zone_name
 }
 
 resource "ovh_domain_zone_record" "dagobah" {
